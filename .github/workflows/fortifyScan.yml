@@ -1,8 +1,9 @@
 name: Fortify Scan
 on:
-  pull_request:
-    branches: [ develop ]
-    types: [ opened, reopened ]
+  push:
+    branches:
+      - main
+ 
 
 jobs: 
   build:
